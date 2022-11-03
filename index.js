@@ -87,7 +87,7 @@ const readline = require('readline').createInterface({
 
       // Add more attributes field if available
       if (dat["Attributes"]) {
-        dat["Attributes"].split(",").forEach((attribute) => {
+        dat["Attributes"].split(";").forEach((attribute) => {
           if (attribute) {
             try {
               const values = attribute.split(":");
